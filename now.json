@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "public": true,
+  "name": "wmdd-week-11-assignment",
+  "env": {
+    "DBHOST": "todo.cfziyh3otjpq.us-east-2.rds.amazonaws.com",
+    "DBPORT": "3306",
+    "DBUSER": "sagarkalyan",
+    "DBPASSWORD": "sagarkalyan",
+    "DBNAME": "Todolist"
+  },
+  "builds": [{ "src": "api/*/index.js", "use": "@now/node" }],
+  "routes": [
+    { "src": "/api/get", "methods": ["GET"], "dest": "/api/get/index.js" },
+    { "src": "/api/post", "methods": ["POST"], "dest": "/api/post/index.js" },
+    { "src": "/", "status": 404},
+    { "src": "/api", "status": 404}
+  ]
+}
