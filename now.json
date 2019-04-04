@@ -5,8 +5,8 @@
   "env": {
     "DBHOST": "todo.cfziyh3otjpq.us-east-2.rds.amazonaws.com",
     "DBPORT": "3306",
-    "DBUSER": "sagarkalyan",
-    "DBPASSWORD": "sagarkalyan",
+    "DBUSER": "",
+    "DBPASSWORD": "",
     "DBNAME": "Todolist"
   },
   "builds": [{ "src": "api/*/index.js", "use": "@now/node" }],
